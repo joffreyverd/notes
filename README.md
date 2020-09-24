@@ -1,7 +1,7 @@
 Code book
 =======
 
-My personal code book with some little tricks I found this last few years on different technologies.
+My personal code book containing some tricks I learned on different technologies.
 
 ## Directory structure
 
@@ -9,6 +9,6 @@ My personal code book with some little tricks I found this last few years on dif
 dot-files/          configuration files
 linux/              debian tools
 macos/              mac os tools
-tech/               cheatsheets about all technologies I use
+tech/               cheatsheets about technologies I used
 tuto/               usefull tutorials
 ```
