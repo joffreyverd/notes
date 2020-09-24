@@ -1,7 +1,5 @@
 ```js
 
-// ------------- DIALOG WIDGET ------------- //
-
 // Create a dialog box and inject a view into it
 var div = document.createElement('div');
 jQuery(div).dialog({

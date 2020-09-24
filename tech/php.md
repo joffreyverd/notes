@@ -1,6 +1,6 @@
 ```php
 
-// ---------------------- Usage of classes ---------------------- //
+// ---------------------- Usage of classes ----------------------
 
 class Tuto
 {
@@ -38,12 +38,12 @@ echo QC::PENDING;
         return true;
     }
 
-// ---------------------- Forms ---------------------- //
+// ---------------------- Forms ----------------------
 
 // Unset à post value from a form
 unset($_POST['value']);
 
-// ---------------------- Print data ---------------------- //
+// ---------------------- Print data ----------------------
 
 // Usefull to echo php values in html
 $value = 'lol';
@@ -52,7 +52,7 @@ echo '<code><pre>' . print_r($value) . '</pre></code>';
 // Prettify arrays
 print('<pre>' . print_r($values, true) . '</pre>');
 
-// ---------------------- Manipulate data ---------------------- //
+// ---------------------- Manipulate data ----------------------
 
 // Usefull to extract data in a multi-level array and
 // put it inside a new one without be forced to iterate with a foreach
@@ -103,7 +103,7 @@ $ids = array_map(function ($file) {
 // And with PHP 7.4 (arrow function):
 $ids = array_map(fn($file) => $file->id, $files);
 
-// ---------------------- Return types ---------------------- //
+// ---------------------- Return types ----------------------
 
 // Ternary condition
 return ($attachments ? $attachments : []);
@@ -123,7 +123,7 @@ if (!$user) {
     return false;
 }
 
-// ---------------------- Performance test ---------------------- //
+// ---------------------- Performance test ----------------------
 
 $i = 0;
 $time_start = microtime(true);
@@ -137,7 +137,7 @@ $time = $time_end - $time_start;
 echo "Took $time seconds\n to retrieve $i practice objects with Doctrine 2 \n";
 die();
 
-// ---------------------- Functions ---------------------- //
+// ---------------------- Functions ----------------------
 
 // anonymous function
 $returnFunction = function ($value) {

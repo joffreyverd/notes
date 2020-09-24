@@ -1,3 +1,5 @@
+```js
+
 //---------------------- ASYNCHRONOUS TASKS ----------------------
 async function test() {
     // async is usefull only to call await

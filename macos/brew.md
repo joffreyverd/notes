@@ -3,13 +3,13 @@
 # install brew on mac
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install formula
+# install a formula
 brew install <formula>
 
 # homebrew extension to install GUI applications
 brew cask install <cask>
 
-# uninstall cask
+# uninstall a cask
 brew cask rm <formula>
 
 # list the casks

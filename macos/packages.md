@@ -20,15 +20,15 @@ gradle # build automation system for android app
 wtk # HTTP benchmarking tool - performances
 
 # brew cask
-brave-browser # secure browser
-tor-browser # secure browser
+brave-browser
+tor-browser
 firefox
 microsoft-edge
-1password # password manager
+1password
 spotify
 appcleaner
-docker # container manager 
-protonvpn # vpn
+docker
+protonvpn
 signal
 keybase
 tableplus # database client
@@ -37,14 +37,13 @@ tresorit # cloud
 postman # api client
 insomnia # api client (lighter)
 iterm2 # terminal
-raindropio # bookmarks manager
 slack
-spectacle
+spectacle # windows spliter
 horos # dicom previewer
 vlc
 typora # markdown editor
 android-studio
-visual-studio-code # code editor
+visual-studio-code
 font-fira-code # VSCode font
 whatsapp
 skype

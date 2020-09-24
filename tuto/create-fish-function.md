@@ -7,8 +7,8 @@ cd ~/.config/fish/functions
 vi new-function.fish
 
 # write the function
-function myfunction
-  # instructions
+function see
+    cat ~/.config/fish/functions/{$argv}.fish
 end
 
 # use the bellow function to save changes

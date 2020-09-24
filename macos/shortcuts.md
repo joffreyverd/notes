@@ -8,7 +8,7 @@ Keyboard shortcuts
 - Open a new tab -- cmd n
 - Deploy/hide side menu -- cmd b
 
-**Mac**
+**Macos**
 - Comment a code area on VSC -- cmd k *THEN* cmd c
 - Uncomment a code area on VSC -- cmd k *THEN* cmd u
 
