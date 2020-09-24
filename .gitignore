@@ -1,0 +1,5 @@
+# vscode local configuration
+.vscode/
+
+# mac files
+.DS_Store
