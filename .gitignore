@@ -3,3 +3,5 @@
 
 # mac files
 .DS_Store
+
+super-linter.log
