@@ -1,5 +1,7 @@
 # Git
 
+The convention I use to write my commits: https://www.conventionalcommits.org
+
 ```sh
 
 # clone a remote repository
@@ -17,20 +19,11 @@ git pull
 # change the last commit
 git commit --amend
 
-# update one or more of the three last commits
-git rebase -i HEAD~3
-
 # delete the last local commit
 git reset HEAD~1
 
 # abort the current merge
 git merge --abort
-
-# abort the changes
-git rebase --abort
-
-# save the changes
-git rebase --continue
 
 # /!\ put local branch as the remote branch
 git reset --hard origin/dev
@@ -67,7 +60,7 @@ git stash list
 git stash apply 0
 
 # ------------- retrieve the commit history on the local branch
-# retrieve the remote branches/commits 
+# retrieve the remote branches/commits
 git fetch
 # delete the local branch
 git branch -D branchName
@@ -97,9 +90,6 @@ git commit
 git push origin HEAD
 
 # ------------- rebasing
-git rebase -i HEAD~2
-# vi -> :wq
-git push --force
 # abort the changes
 git rebase --abort
 # save the changes
@@ -136,4 +126,10 @@ git push origin master
 # ------------- delete from the remote repository the last commit
 git reset HEAD^
 git push origin +HEAD
+
+# ------------- squash multiple commits into a single one
+git rebase -i HEAD~<N> # the N last commits
+# write `s` instead on pick in the editor, except for the first one, then w/q
+# change or not the default new commit message which pop, then w/q
+git push --f
 ```

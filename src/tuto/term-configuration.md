@@ -53,6 +53,6 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 ```
 
 2. Create the file and push into it the `starship.toml` content
-```sh 
+```sh
 vi ~/.config/starship.toml
 ```

@@ -25,17 +25,17 @@ myHtmlDiv.parentNode.firstChild;
 
 // Remove totally the element from the DOM
 document.getElementById('myElement').remove();
-// Just hide it without delete 
+// Just hide it without delete
 document.getElementById('myElement').hide();
 
 // Wait page load before instantiate variables and work
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
   //do work
 });
 
 // Change checkbox value at each click event
 const checkbox = document.getElementById('remember-me');
 checkbox.addEventListener('change', (event) => {
-    document.getElementById('remember-me').value = event.target.checked; 
+    document.getElementById('remember-me').value = event.target.checked;
 })
 ```

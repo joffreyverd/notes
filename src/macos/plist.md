@@ -7,10 +7,10 @@ Every service/task is a file. The location of the file depends on the questions 
 - When is this service supposed to run?
 - Which privileges will the service need?
 
-Running tasks whith or whitout a logged in user: */Library/LaunchDaemons*: 
+Running tasks whith or whitout a logged in user: */Library/LaunchDaemons*:
 Executed with "root" privileges.
 
-Running tasks with a logged in user:  */Library/LaunchAgents*: 
+Running tasks with a logged in user:  */Library/LaunchAgents*:
 Executed with the privileges of the connected user.
 
 Running tasks with me as user and not other user: *~/Library/LaunchAgents*: Executed with the privileges of the connected user.

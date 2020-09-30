@@ -14,34 +14,34 @@ docker ps -a
 docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}'
 
 # create and start all containers
-docker-compose up 
+docker-compose up
 
-# create and start all containers in free 
-docker-compose up -d 
+# create and start all containers in free
+docker-compose up -d
 
 # restart a specific container
-docker restart <containerName> 
+docker restart <containerName>
 
 # delete a specific container
-docker rm <containerName> 
+docker rm <containerName>
 
 # delete all containers
-docker rm (docker ps -aq) 
+docker rm (docker ps -aq)
 
 # stop a container whitout delete him
-docker stop 
+docker stop
 
 # list of all containers's id and stop everyone clearly
-docker stop (docker ps -q) 
+docker stop (docker ps -q)
 
 # know error of one container
 docker logs <dockerContainerName>
 
 # delete the web and data containers
-docker-compose rm web data 
+docker-compose rm web data
 
 # delete all containers and clean it
-docker volume rm (docker volume ls -q) 
+docker volume rm (docker volume ls -q)
 
 # list all volumes (which are used by the containers)
 docker volume ls

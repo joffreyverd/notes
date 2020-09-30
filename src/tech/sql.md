@@ -50,7 +50,7 @@ truncate table `user`
 
 -- Get column filter by occurences
 select `name`,
-  count(`name`) as `value_occurrence` 
+  count(`name`) as `value_occurrence`
 from     `user`
 group by `name`
 order by `value_occurrence` desc;

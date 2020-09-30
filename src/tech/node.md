@@ -55,7 +55,7 @@ class Streaming {
         stream.on('data', function() {
             console.log(this.name); // this.name = undefined
         });
-    
+
         stream.on('data', () => {
             console.log(this.name); // name = 'test'
         });

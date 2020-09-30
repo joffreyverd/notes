@@ -15,7 +15,7 @@ open -a Discord
 open .
 
 # delete a folder and all files into him
-sudo rm -r .gitkraken 
+sudo rm -r .gitkraken
 
 # see all active process
 top

@@ -15,7 +15,7 @@ if name == 'Juan' or name == 'Morray':
 mylist = [1, 2, 3, 4, 5]
 for x in mylist:
     print(x)
-    
+
 # Repeat a string
 lotsofhellos = 'hello' * 10
 print(lotsofhellos)
@@ -23,16 +23,16 @@ print(lotsofhellos)
 # Create a function
 def my_function():
     print('This is my function')
-    
+
 # Call my new function
 my_function()
 
 # Create a classe
 class MyClass:
   variable = 'lol'
-  
+
   def another_function(self)
-  
+
 # Call my new classe
 myObject = MyClass()
 
@@ -61,7 +61,7 @@ print(ages)
 # Iterate on a dictionarie
 for name, age in ages.items():
     print('Age of %s is %d' % (name, age))
-    
+
 # Testing if a value exist or not in the dictionary
 if 'Juan' in phonebook:
     print('Juan is listed in the dictionary')
