@@ -1,6 +1,6 @@
 # Git
 
-The convention I use to write my commits: https://www.conventionalcommits.org
+The [convention](https://www.conventionalcommits.org) I use to write my commits.
 
 ```sh
 

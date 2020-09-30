@@ -75,6 +75,9 @@ cat ~/.ssh/id_rsa.pub
 # prettify an entiere project
 prettier --write "**/*.js"
 
+# create a symlink
+ln <existingPathName> <newPathName>
+
 #----- youtube-dl homebrew package -----#
 youtube-dl "https://www.youtube.com/watch?v=pZ2o9a_jm-w"
 # get only the audio with the best audio quality

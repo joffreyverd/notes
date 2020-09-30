@@ -1,11 +1,11 @@
 # Create a cron
 
-**edit the crontab**
+## Edit the crontab
 ```sh
 sudo crontab -e
 ```
 
-**Explaination**
+## Explaination
 ```sh
 * * * * *  command
 │ │ │ │ │
@@ -16,12 +16,12 @@ sudo crontab -e
 └─────────────────────── min (0 - 59)
 ```
 
-**List the crontab jobs**
+## List the crontab jobs
 ```sh
 crontab -l
 ```
 
-**Cron exemples**
+## Cron exemples
 ```sh
 # send a mail in case of error to the following adress
 MAILTO=jverd@protonmail.com
@@ -33,11 +33,12 @@ MAILTO=jverd@protonmail.com
 * * * * * echo 'Hello there' >> ./Desktop/log.txt
 ```
 
-**Restart a cron as root**
+## Restart a cron as root
 ```sh
 sudo cron restart
 ```
-**Remove crontab**
+
+## Remove crontab
 ```sh
 # /!\ IT WILL DELETE ALL THE TASKS
 crontab -r

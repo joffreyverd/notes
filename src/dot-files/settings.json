@@ -1,12 +1,7 @@
-# VSCode configuration
-
-```json
-
 {
     "breadcrumbs.enabled": false,
     "php-cs-fixer.lastDownload": 1580936491940,
-    "files.autoSave": "onWindowChange",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "files.insertFinalNewline": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -23,10 +18,9 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'Fira Code'",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll": true
     },
     "php-cs-fixer.allowRisky": false,
-    "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": {
         "@PSR2": true,
         "array_indentation": true,
@@ -35,13 +29,13 @@
         },
         "binary_operator_spaces": {
             "align_double_arrow": false,
-            "align_equals": false,
+            "align_equals": false
         },
         "blank_line_after_opening_tag": true,
         "cast_spaces": true,
         "compact_nullable_typehint": true,
         "concat_space": {
-            "spacing": "one"
+            "spacing": "one"       
         },
         "declare_equal_normalize" : true,
         "function_typehint_space": true,
@@ -61,8 +55,28 @@
         "single_trait_insert_per_statement": true,
         "ternary_operator_spaces": true,
         "trim_array_spaces": true,
-        "unary_operator_spaces": true,
+        "unary_operator_spaces": true
     },
-    "php-cs-fixer.executablePath": "/usr/local/bin/php-cs-fixer"
+    "php-cs-fixer.executablePath": "/usr/local/bin/php-cs-fixer",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.wordWrap": "off",
+    "workbench.activityBar.visible": true,
+    "[json]": {
+    
+    },
+    "yaml.schemas": {
+        "file:///Users/jverd/.vscode/extensions/atlassian.atlascode-2.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "e51b89a4-6205-4757-9e9f-b5560691213c",
+            "enabled": true,
+            "name": "My clinflows Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "ff2f625a-e8b4-4954-892e-519eb1fde859",
+            "monitor": true
+        }
+    ],
+    "files.autoSave": "onWindowChange",
+    "php-cs-fixer.onsave": true
 }
-```

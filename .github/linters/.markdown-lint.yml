@@ -1,24 +1,19 @@
----
 ## Markdown Linter rules ##
 
-# Linter rules doc:
 # - https://github.com/DavidAnson/markdownlint
 
-# Rules by id #
-MD004: false # Unordered list style
 MD007:
-  indent: 2 # Unordered list indentation
-MD009: false # Authorize spaces
-MD010: false # allow hard indentation
+  indent: 2 # ul-indent
+MD009: false # no-trailing-spaces
+MD010: false # no-hard-tabs
+MD012: false # no-multiple-blanks
 MD013:
-  line_length: 808 # Line length
+  line_length: 808 # line-length
+MD022: false # blanks-around-headings
 MD026:
-  punctuation: ".,;:!。，；:" # List of not allowed
-MD029: false # Ordered list item prefix
-MD033: false # Allow inline HTML
-MD034: false # Allow Bare URL used
-MD036: false # Emphasis used instead of a heading
-
-# Rules by tags #
-blank_lines: false  # Error on blank lines
-list_item_empty_lines: true # allow white space at the end of a line
+  punctuation: ".,;:!。，；:" # no-trailing-punctuation
+MD029: false # ol-prefix
+MD031: false # blanks-around-fences
+MD032: false # blanks-around-lists
+MD033: false # no-inline-html
+MD034: false # no-bare-urls
