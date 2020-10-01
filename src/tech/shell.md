@@ -69,8 +69,9 @@ ssh root@51.158.113.134
 # find where is stored a command on a machine
 which <commandName>
 
-# get my ssh public key
+# get ssh public key
 cat ~/.ssh/id_rsa.pub
+# get ssh private key
 
 # prettify an entiere project
 prettier --write "**/*.js"

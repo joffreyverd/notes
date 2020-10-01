@@ -21,27 +21,27 @@ lotsofhellos = 'hello' * 10
 print(lotsofhellos)
 
 # Create a function
-def my_function():
-    print('This is my function')
+def new_function():
+    print('This is a function')
 
-# Call my new function
-my_function()
+# Call the new function
+new_function()
 
 # Create a classe
-class MyClass:
+class NewClass:
   variable = 'lol'
 
   def another_function(self)
 
-# Call my new classe
-myObject = MyClass()
+# Call the new classe
+newObject = NewClass()
 
-# Access to a variable in my new object
-print(myObject.variable) #return 'lol'
+# Access to a variable from a new object
+print(newObject.variable) #return 'lol'
 
 # Change the variable of an object
-myObject.variable = 'loooool'
-print(myObject.variable) # returns 'loooool'
+newObject.variable = 'loooool'
+print(newObject.variable) # returns 'loooool'
 
 # Create a dictionarie
 ages = {}

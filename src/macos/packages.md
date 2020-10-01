@@ -20,6 +20,7 @@ mysql # execute mysql command from the shell
 php-cs-fixer # php linter
 gradle # build automation system for android app
 wtk # HTTP benchmarking tool - performances
+gpg # key pairs manager
 
 # brew cask
 brave-browser
@@ -54,6 +55,7 @@ mamp # local server environment (Apache, WordPress)
 pock # touchbar software
 nvidia-geforce-now # cloud gaming client
 ledger-live # crytpo waller
+gpg-suite # gpg key manager
 
 # mas
 409183694 # Keynote

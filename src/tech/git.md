@@ -1,6 +1,6 @@
 # Git
 
-The [convention](https://www.conventionalcommits.org) I use to write my commits.
+The [convention](https://www.conventionalcommits.org) I use to write commits.
 
 ```sh
 
@@ -16,6 +16,11 @@ git checkout [<commitHash>] .
 # update local branch
 git pull
 
+# see the commit history
+git log
+# verify a commit GPG signature
+git verify-commit <commitId>
+
 # change the last commit
 git commit --amend
 
@@ -27,15 +32,17 @@ git merge --abort
 
 # /!\ put local branch as the remote branch
 git reset --hard origin/dev
-#add and commit with comment/time
-git commit -am "DEC-4951 #comment feat!(new feature): this is a message #time 1h 20m"
+# commit
+git commit -am "<commitMessage>"
+# signed commit
+git commit -S -am "<commitMessage>"
 
 # get differences between two commits
 git diff -C -M <commitId> <commitId> "<fileName+fileWay>"
 # know config of this repository
 git config --list
 # change identity of the last commit
-git commit --amend --author="Joffrey Verd <jverd@protonmail.com>"
+git commit --amend --author="<name> <email>"
 
 # change url of a remote repository
 git remote set-url origin <https://github.com/USERNAME/REPOSITORY.git>
@@ -43,16 +50,17 @@ git remote set-url origin <https://github.com/USERNAME/REPOSITORY.git>
 # delete cache of .gitignore on a file which just added to .gitignore of a repo
 git rm -r --cached <fileName>
 
-# Go on the global gitconfig file
+# ------------- setup the .gitconfig file
+# get the global gitconfig file
 cat ~/.gitconfig
-# change user name on the global config file
-git config --global user.name "joffreyverd"
-# change user email on the global config file
-git config --global user.email "jverd@protonmail.com"
+# get the local gitconfig from a repository
+cat .git/config
 # change user name on the current repo
-git config user.name "joffreyverd"
+git config user.name "<name>" # add `--global` after `config` to do the same as a global config
 # change user email on the current repo
-git config user.email "jverd@protonmail.com"
+git config user.email "<email>" # idem
+# add GPG key on the current repo for the existing user
+git config user.signinkey <id> # idem
 
 # list all stash
 git stash list
@@ -118,7 +126,7 @@ git filter-branch --env-filter '
 git push --force
 git update-ref -d refs/original/refs/heads/master
 
-# ------------- merging an upstream repository into my fork
+# ------------- merging an upstream repository into a fork
 git checkout master
 git pull <sourceRepo> <branchName>
 git push origin master

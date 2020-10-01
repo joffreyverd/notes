@@ -5,7 +5,7 @@ My personal code book containing some tricks I learned on different technologies
 ## Directory structure
 
 ```md
-dot-files/          configuration files
+dotfiles/           configuration files
 lessons/            research about specific topics
 linux/              debian tools
 macos/              mac os tools
