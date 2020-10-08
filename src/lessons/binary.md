@@ -11,7 +11,7 @@ There is several **bases** (Base16 - hexadecimal, Base32, Base64).
 - ASCII -> 1 character = 7 bits (1 byte)
 - UNICODE -> 1 character = 16 bits (2 bytes)
 
-## How do we count in decimal system?
+## How do we count in decimal system (base10)?
 There is 10 numbers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. With these numbbers, we can count until 9. If we want to go above, we need to change of rank: 10, 100, 1000, etc.
 That's why 56 = `50 + 6` but also `5*10^1 + 6*10^0`.
 
@@ -32,7 +32,9 @@ A binary bit field ofen begin with this prefix to reconize him **`0b`**: 0b00101
 11 = 1011
 12 = 1100
 13 = 1101
-14 = 1111
+14 = 1110
+15 = 1111
+16 = 10000
 ```
 
 ### Run into a bit field
@@ -126,3 +128,40 @@ A hexadecimal bit field ofen begin with this prefix to reconize him **`0x`**: 0x
 | D         | 13        |  1101     |
 | E         | 14        |  1110     |
 | F         | 15        |  1111     |
+
+## Base 32 hex
+
+| base32hex | decimal   | binary      | weight   |
+|-----------|-----------|-------------|----------|
+| 0         | 0         |  0 0000     | 0        |
+| 1         | 1         |  0 0001     | 1        |
+| 2         | 2         |  0 0010     | 2        |
+| 3         | 3         |  0 0011     | 2        |
+| 4         | 4         |  0 0100     | 3        |
+| 5         | 5         |  0 0101     | 3        |
+| 6         | 6         |  0 0110     | 3        |
+| 7         | 7         |  0 0111     | 3        |
+| 8         | 8         |  0 1000     | 4        |
+| 9         | 9         |  0 1001     | 4        |
+| A         | 10        |  0 1010     | 4        |
+| B         | 11        |  0 1011     | 4        |
+| C         | 12        |  0 1100     | 4        |
+| D         | 13        |  0 1101     | 4        |
+| E         | 14        |  0 1110     | 4        |
+| F         | 15        |  0 1111     | 4        |
+| G         | 16        |  1 0000     | 5        |
+| H         | 17        |  1 0001     | 5        |
+| I         | 18        |  1 0010     | 5        |
+| J         | 19        |  1 0011     | 5        |
+| K         | 20        |  1 0100     | 5        |
+| L         | 21        |  1 0101     | 5        |
+| M         | 22        |  1 0110     | 5        |
+| N         | 23        |  1 0111     | 5        |
+| O         | 24        |  1 1000     | 5        |
+| P         | 25        |  1 1001     | 5        |
+| Q         | 26        |  1 1010     | 5        |
+| R         | 27        |  1 1011     | 5        |
+| S         | 28        |  1 1100     | 5        |
+| T         | 29        |  1 1101     | 5        |
+| U         | 30        |  1 1110     | 5        |
+| V         | 31        |  1 1111     | 5        |

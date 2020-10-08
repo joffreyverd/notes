@@ -60,7 +60,7 @@ git config user.name "<name>" # add `--global` after `config` to do the same as 
 # change user email on the current repo
 git config user.email "<email>" # idem
 # add GPG key on the current repo for the existing user
-git config user.signinkey <id> # idem
+git config user.signingkey <id> # idem
 
 # list all stash
 git stash list
@@ -71,9 +71,9 @@ git stash apply 0
 # retrieve the remote branches/commits
 git fetch
 # delete the local branch
-git branch -D branchName
+git branch -D <branchName>
 # go on the new local branch
-git checkout branchName
+git checkout <branchName>
 
 # ------------- recover a dropped stash
 git log --graph --oneline --decorate ( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )
@@ -109,19 +109,19 @@ git push origin <ticketFullName>
 
 # ------------- rebase email history
 git filter-branch --env-filter '
-        OLD_EMAIL="jverd@unistra.com"
-        CORRECT_NAME="joffreyverd"
-        CORRECT_EMAIL="jverd@protonmail.com"
-        if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
-        then
+OLD_EMAIL="<oldEmail>"
+CORRECT_NAME="<oldName>"
+CORRECT_EMAIL="<newEmail>"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
         export GIT_COMMITTER_NAME="$CORRECT_NAME"
         export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
-        fi
-        if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
-        then
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
         export GIT_AUTHOR_NAME="$CORRECT_NAME"
         export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
-        fi
+fi
 ' --tag-name-filter cat -- --branches --tags
 git push --force
 git update-ref -d refs/original/refs/heads/master

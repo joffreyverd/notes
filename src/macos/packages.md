@@ -10,6 +10,7 @@ yarn # node packages manager
 tree # tree view of the current folder (replace ls command)
 htop # current process running
 vim # text editor
+rename # multiple rename
 speedtest-cli # speed test connection
 archey # system information
 cowsay # meuh

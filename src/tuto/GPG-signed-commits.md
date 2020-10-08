@@ -34,7 +34,7 @@ Find the issue:
 echo "test" | gpg --clearsign
 ```
 
-## `error: gpg failed to sign the data`
+### `error: gpg failed to sign the data`
 
 1. Add the following lines into `~/.gitconfig`
 ```sh
@@ -52,7 +52,14 @@ pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pine
 killall gpg-agent && gpg-agent --daemon --use-standard-socket --pinentry-program /usr/local/bin/pinentry
 ```
 
-## `gpg: signing failed: Inappropriate ioctl for device`
+### `gpg: signing failed: Inappropriate ioctl for device`
 ```sh
 export GPG_TTY=(tty)
+```
+
+## Security tips
+
+Retrieve the private key to store it on a physical encrypted device
+```sh
+gpg --export-secret-keys <id> > ~/Desktop/private.key
 ```

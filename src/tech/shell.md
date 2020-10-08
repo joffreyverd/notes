@@ -42,6 +42,8 @@ docker cp dcm2xml <dockerContainerName>:/usr/local/bin
 
 # rename a file or folder
 mv <old> <new>
+# rename recursivly
+find . -name '*<extension>' -exec rename -f -v 's/\<old>/\<new>/i' {} \;
 
 # check the inet variable which contain the HOST_IP
 ifconfig en0
