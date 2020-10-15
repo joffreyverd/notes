@@ -66,7 +66,6 @@ cat ~/Downloads/picture.png >> ~/src/personal/cv/picture.png
 tail -f cron.log | grep LOL
 # connection to a remote server by using ssh protocol (need a private/public key)
 ssh <userName>@<serverIp>
-ssh root@51.158.113.134
 
 # find where is stored a command on a machine
 which <commandName>

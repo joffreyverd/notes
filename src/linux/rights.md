@@ -6,6 +6,9 @@
 apt-get update
 apt-get install sudo
 
+# create a new user
+adduser <userName>
+
 # add a new user to the sudo group
 sudo usermod -a -G sudo <userName>
 

@@ -1,4 +1,4 @@
-# Server configuration
+# Node/PM2 installation on a Scaleway VPS
 
 1. Install updates and validate
 ```sh
