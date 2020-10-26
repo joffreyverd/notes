@@ -77,7 +77,7 @@ crontab -u nextcloud -e
 */10 * * * * php /var/www/nextcloud/occ preview:pre-generate -vvv
 ```
 
-**Optional**
+### Optional
 ```sh
 apt install libreoffice libreoffice-l10n-de libreoffice-help-de
 apt install ffmpeg imagemagick ghostscript
