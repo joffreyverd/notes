@@ -65,9 +65,17 @@ delete from `user`
 where `id` = 1;
 
 -- Loop
-DECLARE c INT DEFAULT 1;
-WHILE c <= 2000
+declare c int DEFAULT 1;
+while c <= 2000
     -- SQL
-    SET c  = c  + 1;
-END WHILE;
+    set c  = c  + 1;
+end while;
+
+-- Concatenate a character to the asked field
+update `user` u
+set u.login = CONCAT(u.login, 'z')
+
+-- Detect slow queries
+select * from mysql.slow_log
 ```
+

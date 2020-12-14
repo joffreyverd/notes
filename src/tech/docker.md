@@ -28,6 +28,9 @@ docker rm <containerName>
 # delete all containers
 docker rm (docker ps -aq)
 
+# delete an image
+docker rmi <imageId>
+
 # stop a container whitout delete him
 docker stop
 
@@ -55,7 +58,7 @@ docker volume rm (docker volume ls --filter dangling=true -q)
 docker build -t <serviceName> -f Dockerfile .
 
 # pull from registry a specific image
-docker pull <registryAdress>:<image>
+docker pull <registryAdress>/<image>:<tag>
 
 # clean containers, volumes, images
 docker system prune
@@ -69,6 +72,8 @@ docker run --name maria -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=perso -p
 ## ------------------- Create a new docker image
 # build and tag (latest by default) the new image
 docker build -t <serviceName> .
+# or build an image with specific conf
+docker build -t <serviceName> -f <confPath> . 
 # tag the image
 docker tag <serviceName> <completeRegistryAdress>:<image>
 # push on the remote registry the new image

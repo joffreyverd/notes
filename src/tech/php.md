@@ -105,6 +105,12 @@ $ids = array_map(function ($file) {
 // And with PHP 7.4 (arrow function):
 $ids = array_map(fn($file) => $file->id, $files);
 
+// Instead of `in_array`, use `array_flip` then `array_key_exists`
+$test = in_array($key, $array) ? true : false;
+// So:
+array_flip($array)
+$test = array_key_exists($key, $array) ? true : false;
+
 // ---------------------- Return types ----------------------
 
 // Ternary condition

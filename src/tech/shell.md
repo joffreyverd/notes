@@ -26,6 +26,9 @@ ls -lah
 # give every rights on the file
 chmod 777 <myFile>
 
+# download all the files & folder from an url
+wpget --recursive --no-parent <url>
+
 # create a new file
 touch lol.py
 
