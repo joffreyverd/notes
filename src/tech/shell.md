@@ -97,4 +97,7 @@ wrk -t12 -c400 -d30s <httpAdress>
 ps
 kill -9 <pid>
 lsof -i tcp:<port> # exemple for node: lsof -i tcp:3000
+
+# vi tricks
+:1,$d # remove the entiere content of a file
 ```

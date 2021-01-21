@@ -140,4 +140,11 @@ git rebase -i HEAD~<N> # the N last commits
 # write `s` instead on pick in the editor, except for the first one, then w/q
 # change or not the default new commit message which pop, then w/q
 git push --f
+
+# ------------- handle a pushed commit on the wrong remote branch
+git log # retrieve the commit id
+git reset --hard HEAD~1 # remove the last commit
+git checkout -b <goodBranch> # go to the right branch
+git reset --hard <commitId> # commit on the right branch
+git push
 ```

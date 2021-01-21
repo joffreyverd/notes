@@ -9,7 +9,7 @@
 brew install <formula>
 
 # homebrew extension to install GUI applications
-brew cask install <cask>
+brew install --cask <caskName>
 
 # uninstall a cask
 brew cask rm <formula>

@@ -4,7 +4,7 @@
 
 1. On MacOs
 ```sh
-brew cask install iterm2
+brew install --cask iterm2
 ```
 > Go into > iterm2 > preferences > profiles > colors > color presets
 > create a file called <myTheme.itermcolors> and put into the iterm-conf.xml content

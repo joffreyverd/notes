@@ -2,8 +2,8 @@
 
 1. Install gpg-suite and keybase
 ```sh
-brew cask install gpg-suite
-brew cask install keybase
+brew install --cask gpg-suite
+brew install --cask keybase
 ```
 
 2. Generate a gpg key

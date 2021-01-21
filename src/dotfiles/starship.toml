@@ -24,5 +24,6 @@ deleted = " 🗑 "
 
 [time]
 disabled = false
-format = "🕙 %T "
+format = '🕙 [\[ $time \]]($style) '
+time_format = "%T"
 utc_time_offset = -5

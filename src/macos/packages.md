@@ -23,7 +23,7 @@ gradle # build automation system for android app
 wtk # HTTP benchmarking tool - performances
 gpg # key pairs manager
 
-# brew cask
+# cask
 brave-browser
 tor-browser
 firefox

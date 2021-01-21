@@ -4,7 +4,7 @@
 
 1. Install Android studio
 ```sh
-brew cask install android-studio
+brew install --cask android-studio
 ```
 
 2. Open Android studio and apply the recommanded setup
