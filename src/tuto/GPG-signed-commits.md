@@ -6,7 +6,7 @@ brew install --cask gpg-suite
 brew install --cask keybase
 ```
 
-2. Generate a gpg key
+2. Generate a gpg key with Keybase or with SeaHorse
 ```sh
 keybase pgp gen # then follow the shell process step by step
 ```
@@ -63,3 +63,16 @@ Retrieve the private key to store it on a physical encrypted device
 ```sh
 gpg --export-secret-keys <id> > ~/Desktop/private.key
 ```
+
+## Export GPG key on a linux computer
+
+1. Install a key manager
+```sh
+sudo apt-get install gpa seahorse
+```
+
+2. Import the file `private.key`.
+
+3. Open `gpa` and import the retrieved key.
+
+4. Just setup the git repository.

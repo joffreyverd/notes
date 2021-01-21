@@ -1,3 +1,5 @@
+# ~/.config/starship.toml
+
 # Disable the package module, hiding it from the prompt completely
 [nodejs]
 disabled = true

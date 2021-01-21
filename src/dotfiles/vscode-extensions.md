@@ -3,23 +3,24 @@
 ## Versioning
 - Git Blame
 - Git Stash
-- Jira and Bitbucket (Official)
 
 ## Containers
 - Docker
 
 ## Theme
 - Material Icon Theme
+- Palenight Theme
 - One Dark Pro
 
 ## Clean code
 - ESLint
-- PHP CS Fixer
+- SonarLint
 
 ## Tools
 - Bracket Pair Colorizer 2
 - Path Intellisense
 - PHP IntelliSense
 
-## Debug
-- PHP Debug
+## Config Files
+- Better TOML
+- YAML
