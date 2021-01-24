@@ -2,7 +2,7 @@
 
 1. Install updates and validate
 ```sh
-apt-get update -y
+apt update -y
 ```
 
 2. Download last version of node server
@@ -12,7 +12,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
 3. Install nodejs and validate
 ```sh
-apt-get install nodejs -y
+apt install nodejs -y
 ```
 
 4. Install globally pm2

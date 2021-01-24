@@ -3,8 +3,7 @@
 ```sh
 
 # install `sudo`package to handle rights
-apt-get update
-apt-get install sudo
+apt update && apt install sudo
 
 # create a new user
 adduser <userName>

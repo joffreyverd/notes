@@ -61,7 +61,7 @@ apt-file find iwlwifi-8265-22.ucode
 # return:
 firmware-iwlwifi: /lib/firmware/iwlwifi-8265-22.ucode
 # installation:
-apt-get install firmware-iwlwifi
+apt install firmware-iwlwifi
 ```
 
 - It's the network controller driver which instantiate the network interface so it's needed to the targeted driver
@@ -71,7 +71,7 @@ modprobe -rv iwlwifi && modprobe -v iwlwifi
 
 - Or directly install the missing non free firmware (easiest way)
 ```sh
-apt-get install firmware-linux-nonfree
+apt install firmware-linux-nonfree
 ```
 
 - A reboot can be necessary to update changes on the network controller

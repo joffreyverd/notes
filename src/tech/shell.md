@@ -83,7 +83,7 @@ prettier --write "**/*.js"
 # create a symlink
 ln <existingPathName> <newPathName>
 
-#----- youtube-dl homebrew package -----#
+#----- youtube-dl package -----#
 youtube-dl "https://www.youtube.com/watch?v=pZ2o9a_jm-w"
 # get only the audio with the best audio quality
 youtube-dl -f bestaudio -x --audio-format mp3 "https://www.youtube.com/watch?v=pZ2o9a_jm-w"

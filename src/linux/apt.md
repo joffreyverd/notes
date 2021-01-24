@@ -2,23 +2,28 @@
 
 ```sh
 
-# list all installed packages on the machine
+apt search <package>
+
+apt update # update the sources list
+
+apt upgrade # upgrade the packages
+
 apt list --installed
 
-# check if a specific package is installed or not
-apt list --installed | grep <packageName>
+apt list --installed | grep <package>
 
-# install a package
-apt-get install <packageName>
+apt list --upgradable
 
-# uninstall a package with his associated configuration files
-apt-get --purge remove <packageName>
+apt install <package>
 
-# delete a package
-apt-get --purge remove <packageName>
+apt show <package> # get informations
 
-# delete a package with all his dependencies
-apt-get --purge autoremove <packageName>
+apt remove <package>
+
+apt purge <package> # uninstall package with config files
+
+apt autoremove # uninstall unused packages
+
 
 # get the installed packages list
 dpkg --list

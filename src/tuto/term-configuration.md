@@ -11,7 +11,11 @@ brew install --cask iterm2
 
 1. On Linux
 ```sh
-wget https://hypder-updates.now.sh/download/linux_deb # hyper term
+sudo apt update && sudo apt install gdebi
+```
+- Download the `.deb` executable
+```sh
+gdebi /Downloads/<package>
 ```
 
 ## Shell

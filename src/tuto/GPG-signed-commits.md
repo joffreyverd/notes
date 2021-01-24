@@ -68,7 +68,7 @@ gpg --export-secret-keys <id> > ~/Desktop/private.key
 
 1. Install a key manager
 ```sh
-sudo apt-get install gpa seahorse
+sudo apt install gpa seahorse
 ```
 
 2. Import the file `private.key`.
