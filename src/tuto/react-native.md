@@ -1,4 +1,4 @@
-# React-native new project
+# React-native
 
 1. Go into the directory to create a new project
 ```sh

@@ -1,6 +1,6 @@
 # PHP 8 release
 
-// https://www.php.net/releases/8.0/en.php
+https://www.php.net/releases/8.0/en.php
 
 ## Named arguments
 

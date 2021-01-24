@@ -5,6 +5,7 @@
 sudo update-alternatives --config editor
 # ten choose an id to change the priority and press "enter"
 ```
+
 - If the Linux distro freez on shutdown/restart/logout, try this
 ```sh
 # edit the grub file
