@@ -22,8 +22,11 @@ apt remove <package>
 
 apt purge <package> # uninstall package with config files
 
-apt autoremove # uninstall unused packages
+apt autoremove # remove unused dependencies
 
+apt autoclean # remove outdated package debian files
+
+apt clean # clean apt cache
 
 # get the installed packages list
 dpkg --list
