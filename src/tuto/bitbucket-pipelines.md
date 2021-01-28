@@ -19,7 +19,7 @@ pipelines:
             - npm test
 
   branches:
-    master:
+    main:
     - parallel:
       - step:
           name: Lint

@@ -124,12 +124,12 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 git push --force
-git update-ref -d refs/original/refs/heads/master
+git update-ref -d refs/original/refs/heads/main
 
 # ------------- merging an upstream repository into a fork
-git checkout master
+git checkout main
 git pull <sourceRepo> <branchName>
-git push origin master
+git push origin main
 
 # ------------- delete from the remote repository the last commit
 git reset HEAD^
