@@ -22,7 +22,7 @@ $request->fetchArray();
 // Another way the save much more easier
 $user->set('status', 1)->save();
 
-// Join tables between them
+// Join tables between them 
 $attachments = Doctrine_Query::create()
     ->select('u.name, c.name')
     ->from('User u')

@@ -126,7 +126,11 @@ youtube-dl -f best "https://www.youtube.com/watch?v=pZ2o9a_jm-w"
 
 ### vi
 ```sh
+i # insert something
 :1,$d # remove the entiere content of a file
+dd dG # same
+gg # go on the first line off the file
+/<word> # search a specific word 
 ```
 
 ### prettier
