@@ -3,7 +3,6 @@
 ```sh
 
 # apt
-fonts-firacode # font for VSCode
 fish # shell
 tableplus # database manager
 steam-launcher

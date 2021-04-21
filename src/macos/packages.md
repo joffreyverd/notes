@@ -48,7 +48,6 @@ vlc
 typora # markdown editor
 android-studio
 visual-studio-code
-font-fira-code # VSCode font
 whatsapp
 skype
 cyberduck # sFTP client
