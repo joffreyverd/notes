@@ -23,5 +23,7 @@
         "source.fixAll": true
     },
 
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "editor.cursorBlinking": "expand",
+    "workbench.statusBar.visible": false
 }

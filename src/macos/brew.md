@@ -14,9 +14,7 @@ brew install --cask <caskName>
 # uninstall a cask
 brew cask rm <formula>
 
-# list the casks
-brew cask list -1
-# list the formulae
+# list the formulae & the casks
 brew list -1
 
 # update brew
