@@ -1,8 +1,0 @@
-# ~/.gitconfig
-
-[user]
-	signingkey = 0CFD77E39AC7B157
-	name = joffreyverd
-	email = jverd@protonmail.com
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2

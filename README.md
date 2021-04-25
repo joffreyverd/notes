@@ -5,11 +5,10 @@ My personal code book containing some tricks I learned on different technologies
 ## Directory structure
 
 ```md
-dotfiles/           configuration files
+languages/          cheatsheets about technologies I used
 lessons/            research about specific topics
 linux/              debian tools
 macos/              mac os tools
-tech/               cheatsheets about technologies I used
 tuto/               usefull tutorials
 ```
 
