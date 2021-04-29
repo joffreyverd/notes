@@ -66,6 +66,10 @@ git config user.signingkey <id> # idem
 git stash list
 # apply the stash@{0}
 git stash apply 0
+# export the stash into a file
+git stash show "stash@{0}" -p > <stashName>.patch
+# apply the stash
+git apply <stashName>.patch
 
 # ------------- retrieve the commit history on the local branch
 # retrieve the remote branches/commits
