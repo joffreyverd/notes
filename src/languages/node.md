@@ -38,6 +38,8 @@ test(a);
 const test = (a) => {
     return a;
 }
+// Same with shortcut
+const test = (a) => a;
 test(a);
 
 // arrow anonymous function
