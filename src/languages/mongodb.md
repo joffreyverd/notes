@@ -99,3 +99,28 @@ db.collection('users').updateMany({
 ```
 
 ## Delete
+
+Delete a single document:
+```js
+db.collection('users').deleteOne({
+    _id: ObjectId('6139afa9064ab17994640147')
+}).then((result) => {
+    if (result.deletedCount === 1) {
+        return console.log('Successfully deleted one document');
+    }
+    console.log('No documents matched the query. Deleted 0 documents.');
+}).catch((e) => console.log(e));
+```
+
+Delete many documents:
+```js
+db.collection('users').deleteMany({
+    name: 'Bobby'
+}).then((result) => {
+    const { deletedCount } = result;
+    if (deletedCount >= 1) {
+        return console.log(`Successfully ${deletedCount} deleted document`);
+    }
+    console.log('No documents matched the query. Deleted 0 documents.');
+}).catch((e) => console.log(e));
+```
