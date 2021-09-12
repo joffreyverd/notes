@@ -18,6 +18,20 @@ Get the current version:
 db.version();
 ```
 
+Initialisation from a `js` file:
+```js
+const mongodb = require('mongodb');
+const { MongoClient, ObjectId } = mongodb;
+
+MongoClient.connect(
+    'mongodb://127.0.0.1:27017', 
+    { useNewUrlParser: true }
+).then((client) => {
+    const db = client.db('database-name');
+    // db calls here...
+}).catch((e) => console.log(e));
+```
+
 ## Create
 
 Insert a single document into a collection:

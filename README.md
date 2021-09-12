@@ -5,9 +5,9 @@ My personal code book containing some tricks I learned on different technologies
 ## Directory structure
 
 ```md
-languages/          cheatsheets about technologies I used
 lessons/            research about specific topics
 linux/              debian tools
+technologies/       cheatsheets about technologies I used
 macos/              mac os tools
 tuto/               usefull tutorials
 ```
