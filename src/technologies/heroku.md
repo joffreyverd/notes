@@ -41,3 +41,13 @@ Push the code
 ```sh
 git push heroku main
 ```
+
+Get the current config
+```sh
+heroku config
+```
+
+Apply a specific config
+```sh
+heroku config:set JWT_SECRET=<secret> MONGODB=<path>
+```
