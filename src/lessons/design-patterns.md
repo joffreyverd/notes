@@ -5,7 +5,7 @@ Gamma Categorization, splited into three categories:
 - Creational Patterns:
     - deal with the creation (constructioin of objects).
     - Explicit (constructor) VS implicit (Dependency Injection, reflection, etc).
-    Wholesale (single statement VS piecewise (step-by-step)).
+    - Wholesale (single statement VS piecewise (step-by-step)).
 - Structural Patterns:
     - Concerned with the stryctyre (class members).
     - Many pattenrs are wrappers that mimic the underlying class'interface.
