@@ -5,13 +5,33 @@
 # authentication with existing credentials to a remote registry
 docker login <registryAdress>
 
-# list of all the active containers
+docker run <image> # docker create then docker run
+# alternativly
+docker create <image>
+docker start -a <imageId>
+
+# stoping the running process
+docker stop <imageId> # SIGTERM
+# kill the runing process
+docker kill <imageId> # SIGKILL
+
+# list of all the running containers
 docker ps
 
-# list of all containers
+# list of all the containers
 docker ps -a
-# List of all containers with essential informations
-docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}'
+# list of all containers with essential informations
+docker ps -a --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}'
+
+# execute a command inside the given container
+docker exec -it <containerId> <command>
+# execute a new shell directly from the container
+docker exec -it <containerName> sh
+
+# create a docker image from the right repository
+docker build -t joffreyverd/redis:latest .
+# then run the docker container
+docker run joffreyverd/redis
 
 # create and start all containers
 docker-compose up
@@ -30,9 +50,6 @@ docker rm (docker ps -aq)
 
 # delete an image
 docker rmi <imageId>
-
-# stop a container whitout delete him
-docker stop
 
 # list of all containers's id and stop everyone clearly
 docker stop (docker ps -q)
@@ -73,10 +90,11 @@ docker run --name maria -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=perso -p
 # build and tag (latest by default) the new image
 docker build -t <serviceName> .
 # or build an image with specific conf
-docker build -t <serviceName> -f <confPath> . 
+docker build -t <serviceName> -f <confPath> .
 # tag the image
 docker tag <serviceName> <completeRegistryAdress>:<image>
 # push on the remote registry the new image
 docker push <completeRegistryAdress>:<image>
 # pull the new image from the remote registry
 docker pull <completeRegistryAdress>:<image>
+```

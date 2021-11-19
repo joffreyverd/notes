@@ -1,12 +1,14 @@
 # Tricks
 
 - Change the default shell text editor
+
 ```sh
 sudo update-alternatives --config editor
 # ten choose an id to change the priority and press "enter"
 ```
 
 - If the Linux distro freez on shutdown/restart/logout, try this
+
 ```sh
 # edit the grub file
 sudo vi /etc/default/grub
@@ -23,4 +25,11 @@ DefaultTimeoutStartSec=5s
 DefaultTimeoutStopSec=5s
 # reload the daemon
 sudo systemctl daemon-reload
+```
+
+- Create an alias with the fish shell
+
+```sh
+alias k="kubectl"
+funcsave k
 ```
