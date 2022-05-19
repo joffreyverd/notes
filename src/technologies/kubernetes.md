@@ -24,7 +24,6 @@ kubectl delete <object> <podName>
 # create a new pod from the config file
 kubectl apply -f <configFileName> # same when creating any new object (deployment, service, etc)
 
-
 # print info on a running object
 kubectl describe <object> <podName> # object = pod, deployment, service, etc
 ```
@@ -57,9 +56,12 @@ kubectl apply -f <deplFileName>
 - Make an update into the code
 - Build the image
 - Push the image to docker hub
-- Run the following:
+- Restart the k8s deployment
 
 ```sh
+cd <serviceFolder>
+docker build -t joffreyverd/<serviceName> .
+docker push joffreyverd/<serviceName>
 kubectl rollout restart deployment <deplName>
 ```
 
