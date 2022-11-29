@@ -37,6 +37,16 @@ kubectl apply -f <configFileName>
 kubectl delete deployment <depName>
 ```
 
+### Secrets
+
+```sh
+# create a generic secret
+kubectl create secret generic <name> --from-literal=<pair=value>
+# kubectl create secret generic jwt-secret --from-literal=jwt=asdf
+
+kubectl get secrets
+```
+
 ## Updating deployments
 
 ### Method n°1
